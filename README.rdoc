@@ -1,5 +1,7 @@
 == README
 
+Root for finding info about this project/tutorial: https://github.com/turingschool/lesson_plans/tree/master/ruby_02-web_applications_with_ruby/mix_master
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
