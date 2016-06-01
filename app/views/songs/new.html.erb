@@ -1,8 +1,18 @@
-<h1>New Song</h1>
-<p>Add a new song for <%= @artist.name %></p>
-<%= form_for([@artist, @song]) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="jumbotron">
+
+    <h1>New Song</h1>
+    <p>Add a New Song for <%= @artist.name %></p>
+    <%= form_for([@artist, @song]) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.submit %>
+    <% end %>
+
+  </div>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

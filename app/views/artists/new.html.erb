@@ -1,12 +1,16 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<div class="container">
+  <div class="jumbotron">
+    <h2>Create a New Artist</h2><br>
 
-  <%= form_for(@artist) do |f| %>
+    <%= form_for(@artist) do |f| %>
     <% if @artist.errors.any? %>
-      <h2><%= pluralize(@artist.errors.count, "error") %> prohibited this record from being saved: </h2>
-      <ul>
-        <% @artist.errors.full_messages.each do |message| %>
-        <% end %>
-      </ul>
+    <h2><%= pluralize(@artist.errors.count, "error") %> prohibited this record from being saved: </h2><br>
+    <ul>
+      <% @artist.errors.full_messages.each do |message| %>
       <% end %>
+    </ul>
+    <% end %>
 
     <%= f.label :name %>
     <%= f.text_field :name %>
@@ -15,4 +19,8 @@
     <%= f.text_field :image_path %>
 
     <%= f.submit "Create Artist" %>
-  <% end %>
+    <% end %>
+
+  </div>
+</div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
