@@ -14,4 +14,14 @@ RSpec.feature "User submits a new song do" do
     expect(page).to have_content song_title
     expect(page).to have_link artist.name, href: artist_path(artist)
   end
+
+  # scenario "they do not have all necessary info and get error" do
+  #   artist = create(:artist)
+  #
+  #   visit artist_path(artist)
+  #
+  #   click_on "New Song"
+  #
+  #   expect(page).to have_content "Title cannot be blank"
+  # end
 end
